@@ -1,0 +1,61 @@
+:root{}
+
+*{ padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+    background: url(images/bg-pattern-bottom.svg) 50vw 50vh repeat transparent;
+    background: url(images/bg-pattern-top.svg) 50vw 50vh repeat transparent;
+    background-color: aqua;
+
+   
+}
+
+
+.card{
+    max-width: 300px;
+    background-color: aqua;
+    padding: 1em;
+}
+
+.card__user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card__user__info{
+    display: flex;
+}
+
+
+
+.card__stats{
+    display: flex;
+}
+
+.card__stats__value{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__stats__value:first-child{}
+.card__stats__value:last-child{}
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
