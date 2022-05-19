@@ -19,8 +19,8 @@ body{
     justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
     
-    background: url(images/bg-pattern-top.svg) -25vw -25vh  no-repeat;
-    background-color: red;
+    background: url(images/bg-pattern-top.svg) -25vw -50vh no-repeat, url(images/bg-pattern-bottom.svg) 50vw 50vh no-repeat;
+    background-color: var(--color-primary-darkCyan);
 
    
 }
@@ -37,6 +37,7 @@ body{
 }
 
 .card{
+    position: relative;
     background-color: white;
     padding: 1em;
     padding-top: 4em;
@@ -46,6 +47,21 @@ body{
     border-bottom-left-radius: 15px ;
     border-bottom-right-radius: 15px;
 }
+
+.card__picture{
+    position: absolute;
+    top: -50px;
+
+
+
+}
+
+.card__picture img{
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
 
 .card__user{
     display: flex;
