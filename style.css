@@ -1,4 +1,14 @@
-:root{}
+:root{
+
+    --color-primary-darkCyan: hsl(185, 75%, 39%);
+    --color-primary-veryDarkDesaturedBlue: hsl(229, 23%, 23%);
+    --color-primary-darkGrayishBlue:hsl(227, 10%, 46%);
+
+
+--color-neutral-darkGray: hsl(0, 0%, 59%);
+
+
+}
 
 *{ padding: 0;
     margin: 0;
@@ -12,6 +22,7 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    font-family: 'Kumbh Sans', sans-serif;
     
     
     background: url(images/bg-pattern-top.svg) -25vw -25vh  no-repeat;
@@ -20,7 +31,7 @@ body{
    
 }
 .container{
-    width: 300px;
+    width: 350px;
     
 
 }
@@ -28,7 +39,7 @@ body{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background: url(images/bg-pattern-card.svg);
-    height: 100px;
+    height: 120px;
 
 }
 
@@ -39,6 +50,7 @@ body{
     padding-top: 4em;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-bottom-left-radius: 15px ;
     border-bottom-right-radius: 15px;
 
@@ -56,23 +68,47 @@ body{
 
 .card__user__info{
     display: flex;
+    align-items: center;
+    gap: 1em;
+    
+}
+.card__user__info h1{
+    font-size: 1.5em;
+}
+.card__user__info p{
+    color: var(--color-neutral-darkGray);
+    font-size: 1.5em;
 }
 
-
+.card__line{
+    width: 100%;
+}
 
 .card__stats{
-    padding: 1em;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    padding-top: 1em;
+
+    justify-content: space-around;
 }
+
+
 
 .card__stats__value{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
-.card__stats__value:first-child{}
-.card__stats__value:last-child{}
+.card__stats__value p:first-child{
+    font-weight: 700;
+}
+.card__stats__value p:last-child{
+    font-size: 12px;
+    color: var(--color-neutral-darkGray);
+
+}
 
 
 
