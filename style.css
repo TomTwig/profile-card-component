@@ -6,7 +6,8 @@
     --color-neutral-darkGray: hsl(0, 0%, 59%);
 }
 
-*, *::after, *::before{ padding: 0;
+*, *::after, *::before{ 
+    padding: 0;
     margin: 0;
     box-sizing: 0;
 }
@@ -45,8 +46,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom-left-radius: 15px ;
+    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 45, 0.1);
 }
 
 .card__picture{
@@ -82,7 +84,7 @@ color: var(--color-neutral-darkGray);
 }
 .card__user__info p{
     color: var(--color-neutral-darkGray);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .card__line  {
@@ -121,13 +123,11 @@ color: var(--color-neutral-darkGray);
 @media only screen and (max-width: 400px){
 
     body{
-        padding: 1.5em;
-        
+        padding: 1.5em; 
     }
 
     .container{
         width: 100%;
-    
     }
     
 }
