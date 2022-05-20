@@ -19,10 +19,11 @@ body{
     justify-content: center;
     font-family: 'Kumbh Sans', sans-serif;
     
-    background: url(images/bg-pattern-top.svg) -25vw -50vh no-repeat, url(images/bg-pattern-bottom.svg) 50vw 50vh no-repeat;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat;
     background-color: var(--color-primary-darkCyan);
-
-   
+    overflow: hidden;
 }
 .container{
     width: 350px;
@@ -51,15 +52,11 @@ body{
 .card__picture{
     position: absolute;
     top: -50px;
-
-
-
 }
 
 .card__picture img{
     border-radius: 50%;
     border: 5px solid white;
-
 }
 
 
@@ -121,7 +118,22 @@ color: var(--color-neutral-darkGray);
 }
 
 
+@media only screen and (max-width: 400px){
+
+    body{
+        padding: 1.5em;
+        
+    }
+
+    .container{
+        width: 100%;
+    
+    }
+    
+}
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 1em;}
+.attribution a { color: white; }
